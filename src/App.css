@@ -44,3 +44,34 @@ button:hover{
     width: 300px;
     margin: 50px auto;
 }
+
+.success, .fail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 130px;
+    border-radius: 10px;
+    left: -250px;
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+}
+
+.back{
+    transition: left 0s ease 2s, opacity 2s;
+}
+
+.success{
+    background-color: #34ba25;
+}
+
+.fail{
+    background-color: #a82f27;
+}
+
+.start{
+    opacity: 1;
+    left: 60px;
+    transition: left ease 0.2s;
+}
